@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sigil Science - Practical software solutions for ambulatory surgery centers, built by physicians who understand your workflows.">
+    <title>Sigil Science - Practical Software Solutions for Ambulatory Surgery Centers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
+            color: white;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            font-weight: 300;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        section {
+            padding: 50px 20px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            color: #0066cc;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            color: #004d99;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+        
+        .solutions {
+            background-color: #f8f9fa;
+        }
+        
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .solution-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        
+        .highlight-box {
+            background-color: #e8f4ff;
+            border-left: 4px solid #0066cc;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .stats {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .stats h3 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .stats p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .founder {
+            background-color: #f8f9fa;
+        }
+        
+        .founder-content {
+            display: flex;
+            gap: 40px;
+            align-items: start;
+            flex-wrap: wrap;
+        }
+        
+        .founder-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .founder-info ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .founder-info li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .founder-info li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        .contact {
+            text-align: center;
+            background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
+            color: white;
+            padding: 60px 20px;
+        }
+        
+        .contact h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            transition: border-color 0.2s;
+        }
+        
+        .contact-info a:hover {
+            border-bottom-color: white;
+        }
+        
+        .hlth-banner {
+            background-color: #ffc107;
+            color: #000;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #f8f9fa;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .tagline {
+                font-size: 1.1em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            section {
+                padding: 35px 20px;
+            }
+            
+            .solution-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hlth-banner">
+        📍 Attending HLTH 2025, Las Vegas – Let's connect about practical solutions for surgical center operations
+    </div>
+    
+    <header>
+        <div class="container">
+            <h1>SIGIL SCIENCE</h1>
+            <p class="tagline">Practical Software Solutions for Ambulatory Surgery Centers</p>
+        </div>
+    </header>
+    
+    <section class="container">
+        <p style="font-size: 1.15em; text-align: center; max-width: 800px; margin: 0 auto;">
+            We reduce operational friction in ASCs through software built by physicians who understand your workflows—because we live them every day.
+        </p>
+    </section>
+    
+    <section class="solutions">
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <h3>Scheduling Optimization</h3>
+                    <p>Intelligent scheduling that maximizes OR utilization and minimizes staff friction through predictive analytics and real-world workflow understanding.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Regulatory Compliance Tracking</h3>
+                    <p>Automated systems that keep you audit-ready without the administrative burden. Stay compliant while focusing on patient care.</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Clinical Workflow Efficiency</h3>
+                    <p>AI-powered tools designed from frontline operational experience to streamline your daily operations and reduce friction points.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2>Built Different</h2>
+        <p>Our solutions aren't theoretical—they're born from 20+ years of clinical practice and surgical center leadership. We prototype, test, and refine with real users in real environments.</p>
+        
+        <div class="highlight-box">
+            <h3>From Frontline Experience to Production Software</h3>
+            <p>Every feature we build solves a problem we've personally encountered in surgical center operations. We understand the pain points because we experience them daily as practicing physicians and facility directors.</p>
+        </div>
+    </section>
+    
+    <section class="stats">
+        <div class="container">
+            <h3>10+ Years</h3>
+            <p>Our scheduling system has been in continuous daily operational use for over a decade, proving reliability where it matters most.</p>
+        </div>
+    </section>
+    
+    <section class="founder">
+        <div class="container">
+            <h2>Founded by Mark D. Rasmussen, M.D.</h2>
+            <div class="founder-content">
+                <div class="founder-info">
+                    <p>Physician-entrepreneur bridging clinical excellence with practical software innovation. Practicing anesthesiologist, surgical center director, and patent holder specializing in Python-based development and AI/ML applications for healthcare.</p>
+                    
+                    <ul>
+                        <li>20+ years practicing anesthesiologist</li>
+                        <li>Anesthesia Director, University Ambulatory Surgery Center</li>
+                        <li>Patent holder (U.S. Patent 11,276,486)</li>
+                        <li>Medical Executive Board, SCA Healthcare (200+ surgery centers)</li>
+                        <li>Advisory Board, Ospitek</li>
+                        <li>Bioengineering degree (UCSD)</li>
+                        <li>Expert in AI/ML, Python development, and healthcare software</li>
+                        <li>Regional anesthesia specialist (top 2% nationally)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2>Technical Foundation</h2>
+        <p>We combine deep clinical expertise with serious technical capabilities:</p>
+        <ul style="list-style: none; padding-left: 0;">
+            <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                <span style="position: absolute; left: 0; color: #0066cc; font-weight: bold;">✓</span>
+                <strong>Python-based development</strong> for healthcare applications
+            </li>
+            <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                <span style="position: absolute; left: 0; color: #0066cc; font-weight: bold;">✓</span>
+                <strong>AI/ML applications</strong> with focus on predictive analytics and clinical decision support
+            </li>
+            <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                <span style="position: absolute; left: 0; color: #0066cc; font-weight: bold;">✓</span>
+                <strong>HIPAA-compliant solutions</strong> built with security and privacy from day one
+            </li>
+            <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                <span style="position: absolute; left: 0; color: #0066cc; font-weight: bold;">✓</span>
+                <strong>Hardware prototyping expertise</strong> including 3D modeling, printing, and electronics
+            </li>
+            <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                <span style="position: absolute; left: 0; color: #0066cc; font-weight: bold;">✓</span>
+                <strong>Proven commercial deployment</strong> from prototype to production environments
+            </li>
+        </ul>
+    </section>
+    
+    <section class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>Interested in practical solutions for your ambulatory surgery center?</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:Anesthesiologist@me.com">Anesthesiologist@me.com</a></p>
+                <p>Phone: <a href="tel:619-347-8230">619-347-8230</a></p>
+            </div>
+            <p style="margin-top: 30px; font-size: 1.1em;">San Diego, California</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sigil Science LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
